@@ -22,6 +22,10 @@ const Livro = sequelize.define('Livro', {
     type: DataTypes.STRING,
     allowNull: true,
   },
+    quantidade: {
+    type: DataTypes.INTEGER,
+    defaultValue: 1,
+  },
 });
 
 module.exports = Livro;
